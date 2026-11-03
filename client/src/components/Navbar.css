@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 32px;
+    height: 64px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    direction: rtl;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-left: auto;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar-brand::before {
+    content: '💳';
+    font-size: 22px;
+}
+
+.navbar-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    transition: all 0.18s;
+    white-space: nowrap;
+}
+
+.navbar-link:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+    text-decoration: none;
+}
+
+.navbar-logout {
+    color: var(--text-muted);
+    background: none;
+    border: 1px solid var(--border);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font);
+    transition: all 0.18s;
+}
+
+.navbar-logout:hover {
+    color: var(--danger);
+    border-color: var(--danger);
+    background: var(--danger-light);
+}

@@ -1,0 +1,99 @@
+.admin-card {
+    background: var(--surface);
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+    font-size: 14px;
+}
+
+.admin-table th {
+    background: var(--bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border);
+    padding: 12px 14px;
+}
+
+.admin-table tr:hover td {
+    background: var(--bg);
+}
+
+.admin-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    vertical-align: middle;
+}
+
+.btn-approve {
+    background: var(--success);
+    color: #fff;
+    border: none;
+    padding: 7px 16px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: var(--font);
+    transition: background 0.18s;
+}
+.btn-approve:hover { background: #059669; }
+
+.admin-input {
+    padding: 10px 14px;
+    border-radius: var(--radius-sm);
+    border: 1.5px solid var(--border);
+    font-size: 14px;
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--surface);
+    outline: none;
+    transition: border-color 0.18s;
+}
+.admin-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.10); }
+
+.btn-submit {
+    padding: 10px 22px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--font);
+    transition: background 0.18s;
+}
+.btn-submit:hover { background: var(--primary-dark); }
+
+.btn-contact {
+    background: var(--bg);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    padding: 7px 16px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: var(--font);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.18s;
+}
+.btn-contact:hover { color: var(--primary); border-color: var(--primary); background: var(--primary-light); }
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
